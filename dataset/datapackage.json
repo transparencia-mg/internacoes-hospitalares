@@ -4,7 +4,7 @@
   "profile": "data-package",
   "resources": [
     {
-      "description": "Dados de internações dia por unidade FHEMIG a partir de 2025.",
+      "description": "Dados de internações dia por unidade FHEMIG divididos por setor (Tasy) ou centro de custo (SIGH).",
       "dialect": {
         "delimiter": ";"
       },
@@ -32,6 +32,11 @@
             "description": "Mês de referência."
           },
           {
+            "name": "setor_centro_custo",
+            "type": "integer",
+            "description": "Setor hospitalar (Tasy) ou Centro de Custo (SIGH)."
+          },
+          {
             "name": "internacoes",
             "type": "integer",
             "description": "Total de internações (internação: admissão de um paciente para ocupar um leito hospitalar, por um período igual ou maior que 24 horas)."
@@ -39,7 +44,7 @@
         ]
       },
       "scheme": "file",
-      "title": "Internações a partir de 2025."
+      "title": "Dados de internações dia por unidade FHEMIG"
     }
   ],
   "title": "Internações Hospitalares"
